@@ -5,9 +5,7 @@ Setting up a Git Repository
 1. Change directory (`cd`) into the `05-atlas` directory
 
 1. Run
-
         $ git init
-
 1. Run
 
         $ git commit -m "Initial commit"`
