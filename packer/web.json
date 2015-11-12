@@ -9,9 +9,9 @@
       "type": "amazon-ebs",
       "access_key": "{{ user `aws_access_key` }}",
       "secret_key": "{{ user `aws_secret_key` }}",
-      "region": "us-east-1",
-      "source_ami": "ami-f7136c9d",
-      "instance_type": "m3.medium",
+      "region": "eu-west-1",
+      "source_ami": "ami-cd0fd6be",
+      "instance_type": "t2.micro",
       "ssh_username": "ubuntu",
       "ami_name": "web {{ timestamp }}"
     }
