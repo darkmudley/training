@@ -19,7 +19,7 @@ resource "aws_instance" "web" {
 
   // Pull the AMI id from the Atlas registry - this is the fully-compiled
   // artifact that has apache, consul, and consul-template already installed.
-  ami = "${atlas_artifact.web.metadata_full.region-us-east-1}"
+  ami = "${atlas_artifact.web.metadata_full.region-eu-west-1}"
 
   instance_type = "t2.micro"
   key_name      = "${aws_key_pair.terraform-tutorial.key_name}"
@@ -46,7 +46,7 @@ resource "aws_instance" "web" {
 
 resource "aws_instance" "haproxy" {
   // Pull the AMI id from the Atlas registry.
-  ami = "${atlas_artifact.haproxy.metadata_full.region-us-east-1}"
+  ami = "${atlas_artifact.haproxy.metadata_full.region-eu-west-1}"
 
   instance_type = "t2.micro"
   key_name      = "${aws_key_pair.terraform-tutorial.key_name}"
