@@ -18,7 +18,7 @@ resource "aws_instance" "web" {
   count = 5
 
   // Pull the AMI id from the Atlas registry - this is the fully-compiled
-  // artifact that has apache, consul, and consul-template already installed.
+  // artifact that has apache, consul, and consul-template already instlled.
   ami = "${atlas_artifact.web.metadata_full.region-eu-west-1}"
 
   instance_type = "t2.micro"
